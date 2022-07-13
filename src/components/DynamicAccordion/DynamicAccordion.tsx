@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-interface ItemAccordionI {
+export interface ItemAccordionI {
   id: number;
   title: string;
   text: string;

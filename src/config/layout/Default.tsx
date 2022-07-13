@@ -112,7 +112,7 @@ const LayoutDefault: React.FC<LayoutDefaultPros> = ({
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Material-UI ReactJS
+            Marvel ReactJS
           </Typography>
         </Toolbar>
       </AppBar>
@@ -147,6 +147,16 @@ const LayoutDefault: React.FC<LayoutDefaultPros> = ({
                   <HomeIcon />
                 </ListItemIcon>
                 <ListItemText primary="Home" />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+          <Link to="/characters">
+            <ListItem disablePadding>
+              <ListItemButton>
+                <ListItemIcon>
+                  <InfoIcon />
+                </ListItemIcon>
+                <ListItemText primary="Personagens" />
               </ListItemButton>
             </ListItem>
           </Link>

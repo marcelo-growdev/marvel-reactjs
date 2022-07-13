@@ -3,7 +3,7 @@ import React from 'react';
 import { BoxStyled } from './Styleds';
 
 interface BannerPros {
-  title: string;
+  title?: string;
   size: 'h1' | 'h2' | 'h3';
 }
 
