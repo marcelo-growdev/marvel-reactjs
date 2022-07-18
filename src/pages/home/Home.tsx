@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PaperDefault from '../../components/PaperDefault/PaperDefault';
 import { getAll } from '../../store/modules/characters/actions';
+import { createComic } from '../../store/modules/comics/comicSlice';
 import Banner from './components/Banner/Banner';
 
 const Home: React.FC = () => {
@@ -17,6 +18,8 @@ const Home: React.FC = () => {
         })
       );
     }, 10000);
+
+    dispatch(createComic('Nova revista'));
   }, []);
 
   const text = ` Lorem ipsum dolor sit amet consectetur
