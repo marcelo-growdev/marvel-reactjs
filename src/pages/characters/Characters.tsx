@@ -20,8 +20,14 @@ const Characters: React.FC = () => {
   const comicRedux = useSelector((state: any) => state.comic);
   const charactersRedux = useSelector((state: any) => state.characters);
 
+  async function getCharacters() {
+    const result = await marvel.get('/characters');
+    console.log(result);
+  }
+
   useEffect(() => {
     dispatch(clearComic());
+    getCharacters();
   }, []);
 
   useEffect(() => {
