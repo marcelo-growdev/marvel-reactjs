@@ -8,7 +8,10 @@ import DynamicAccordion, {
   ItemAccordionI,
 } from '../../components/DynamicAccordion/DynamicAccordion';
 import { ICharacters } from '../../store/modules/characters/reducer';
-import { clearComic, createComic } from '../../store/modules/comics/comicSlice';
+import {
+  clearComic,
+  createComic,
+} from '../../store/modules/comics/comicsSlice';
 
 const Characters: React.FC = () => {
   const dispatch = useDispatch();

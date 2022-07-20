@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import PaperDefault from '../../components/PaperDefault/PaperDefault';
 import { getAll } from '../../store/modules/characters/actions';
-import { createComic } from '../../store/modules/comics/comicSlice';
+import { createComic } from '../../store/modules/comics/comicsSlice';
 import Banner from './components/Banner/Banner';
 
 const Home: React.FC = () => {
